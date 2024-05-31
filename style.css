@@ -1,5 +1,17 @@
+html{
+  max-width: 1920px;
+max-height: 1080px;
+}
+
+
+
+
 body{
-  background-color: rgb(0, 0, 0);
+ background-image: url(galaxy-night-landscape.jpg);
+ background-size: 1920px;
+max-width: 1920px;
+max-height: 1080px;
+
 }
 
 .page-selector {
@@ -15,7 +27,7 @@ body{
   width: 20px; 
   height: 20px;
   border-radius: 50%;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid rgba(63, 217, 255, 0.329);
   background-color: transparent;
   margin: 10px;
   display: flex;
@@ -27,12 +39,14 @@ body{
 }
 
 .section:hover {
-  border-color: rgb(255, 0, 0);
+ 
+  background-color: rgba(51, 53, 54, 0.705);
+  border-color: rgba(63, 217, 255, 0.329);
 }
 
 .section.active {  /* Rétablir la règle .section.active */
-  background-color: rgb(255, 0, 0);
-  border-color: rgb(255, 0, 0);
+  background-color: rgba(63, 217, 255, 0.329);
+  border-color: rgba(63, 217, 255, 0.329);
 }
 
 .section-text {
@@ -66,27 +80,33 @@ body{
   width: 450px; /* Ajustez la taille du cercle */
   height: 450px;
   border-radius: 50%;
-  background-color: rgb(0, 0, 0); /* Choisissez la couleur de votre choix */
+  background-color: rgba(0, 0, 0, 0.247); /* Choisissez la couleur de votre choix */
   position: absolute;
-  top: 440px;
+  top: 50%;
   left: 50%;
   margin-left: auto;
   transform: translate(-50%, -50%); /* Centre le cercle parfaitement */
   z-index: 30; /* Assurez-vous que le cercle est au-dessus des autres éléments */
-  border: 25px solid rgb(255, 0, 0) ;
-  box-shadow: 5px 5px 5px rgba(255, 124, 124, 0.329);
-  
-  
+  border: 25px solid rgba(255, 255, 255, 0) ;
+  box-shadow: 5px 5px 5px rgba(63, 217, 255, 0.329);
+  }
  
-}
+ 
+ 
+  .photo{
+  bottom: 0%;
+  position: fixed;
+  left: 35%;
+  height: 80%;
 
+ }
 
 .candidature{
   position: absolute;
   color: rgb(255, 255, 255);
-  top: 80%;
+  top: 47%;
   left: 3%;
- font-size: 35px;
+ font-size:350%;
 
 
 }
@@ -98,13 +118,13 @@ body{
 
 .coding{
   position: absolute;
-  background:linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+  background:linear-gradient(to right,rgb(9, 145, 179),rgb(9, 145, 179));
   background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-size: 30px;
 
-  top: 85%;
+font-size: 600%;
+  top: 30%;
   left: 3%;
 
 }
@@ -114,14 +134,14 @@ font-size: 30px;
 .rectangle {
   width: 150px; /* Ajustez la taille du cercle */
   height: 150px;
-  background-color: rgb(255, 0, 0); /* Choisissez la couleur de votre choix */
+  background-color: rgb(9, 145, 179); /* Choisissez la couleur de votre choix */
   position: absolute;
   top: 0%;
   left: 5%;
  
 
   z-index: 10; /* Assurez-vous que le cercle est au-dessus des autres éléments */
-  border: 2px solid rgb(255, 0, 0) ;
+  border: 2px solid rgb(9, 145, 179);
   border-radius: 0%;
  
 }
@@ -146,7 +166,7 @@ font-size: 35px;
   top: 7%;
   left: 85%;
   position: absolute;
-  background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+  background: linear-gradient(to right,rgb(9, 145, 179),rgb(9, 145, 179));
   background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -167,18 +187,63 @@ font-size: 35px;
   
 }
 
-.logos.active {
-  opacity: 1;
-  transform: translateX(0);
+
+
+
+
+
+
+
+
+
+
+
+.logos.animated {
+  animation: logoAnimation 1s forwards;
+}
+
+@keyframes logoAnimation {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
 }
 
 
 
 
 
-.page.active {
-  display: block; /* Afficher la page active */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-button {
   display: inline-flex; /* Pour centrer le contenu */
@@ -196,7 +261,7 @@ font-size: 35px;
 }
 
 .nav-button:hover {
-  background-color: #2b0000; /* Changement de couleur au survol */
+  background-color: rgba(63, 217, 255, 0.329); /* Changement de couleur au survol */
 }
 
 /* Flèche pour le bouton "Précédent" */
@@ -249,7 +314,7 @@ font-size: 35px;
 .timeline-container {
   position: absolute;
   top: 5%;
-  left: 14%;
+  left: 19%;
 }
 
 .timeline-container::before {
@@ -260,7 +325,7 @@ font-size: 35px;
   transform: translateX(-50%);
   width: 2px;
   height: 90%;
-  background-color: #ff0000;/* Couleur de la ligne */
+  background-color: #ff000000;/* Couleur de la ligne */
 }
 
 .timeline-item {
@@ -278,32 +343,32 @@ font-size: 35px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #ff0000; /* Couleur du cercle */
+  background-color: rgb(9, 145, 179) ;/* Couleur du cercle */
   z-index: 1;
 
 }
 
 .timeline-content {
   padding: 10px;
-  background-color: rgb(0, 0, 0); /* Couleur de fond du contenu */
+  background-color: rgba(0, 0, 0, 0); /* Couleur de fond du contenu */
   border-radius: 8px;
-  border-color: rgb(255, 0, 0);
+  border-color: rgb(9, 145, 179);
   border: 1px solid ;
   margin-top: 5px;
  color: rgb(255, 255, 255);
- border: solid 2px rgb(255, 255, 255);
+ border: solid 2px rgba(63, 217, 255, 0.329);
  transform: translateX(-100%);
  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .timeline-contents {
   padding: 10px;
-  background-color: rgb(0, 0, 0); /* Couleur de fond du contenu */
+  background-color: rgba(0, 0, 0, 0); /* Couleur de fond du contenu */
   border-radius: 8px;
-  border-color: rgb(255, 0, 0);
+  border-color: rgb(9, 145, 179);
   border: 1px solid ;
   margin-top: 5px;
  color: rgb(255, 255, 255);
- border: solid 2px rgb(255, 255, 255);
+ border: solid 2px rgba(63, 217, 255, 0.329);
  transform: translateX(-100%);
  transition: opacity 1s ease-out, transform 1s ease-out;
 }
@@ -360,7 +425,7 @@ font-size: 35px;
   transform: translateY(-50%);
   width: 20px; /* Length of the line */
   height: 2px; /* Thickness of the line */
-  background-color: #ff0000; /* Color of the line */
+  background-color: rgb(9, 145, 179) /* Color of the line */
 
 
 
@@ -381,7 +446,7 @@ font-size: 35px;
   top: 16%;
   font-size: 25px;
   line-height: 35px;
-
+  display: inline-block;
 
 
 }
@@ -431,8 +496,12 @@ font-size: 35px;
   transform: translateY(-50%);
   width: 20px; /* Length of the line */
   height: 2px; /* Thickness of the line */
-  background-color: #ff0000; /* Color of the line */
+  background-color: rgb(9, 145, 179); /* Color of the line */
 
 
 
 }
+
+
+
+
