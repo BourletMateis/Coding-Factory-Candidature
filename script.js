@@ -60,8 +60,9 @@ window.addEventListener("load", function() {
         resetAndAnimateLogos();
     });
 
-    // Afficher la première page par défaut
+    // Afficher la première page par défaut et animer les logos
     showPage(0);
+    resetAndAnimateLogos(); // Initialisation des logos lors du chargement
 });
 
 function resetAndAnimateText() {
@@ -86,7 +87,7 @@ function animateText(elem, text) {
         } else {
             clearInterval(elem.intervalId);
         }
-    }, 15); // Délai entre chaque lettre (ajustez si nécessaire)
+    }, 20); // Délai entre chaque lettre (ajustez si nécessaire)
 }
 
 // Fonction pour réinitialiser et animer les logos

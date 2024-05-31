@@ -123,9 +123,10 @@ max-height: 1080px;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
-font-size: 600%;
+font-size: 90px;
   top: 30%;
   left: 3%;
+  right: 97;
 
 }
 
